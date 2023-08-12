@@ -2,9 +2,9 @@ package childClass;
 
 import baseClass.Shape;
 
-public class Square implements Shape {
+public class Hexagon implements Shape {
     @Override
     public void getShape(){
-        System.out.println("This is a Square");
+        System.out.println("This is a Hexagon");
     }
 }

@@ -3,18 +3,18 @@ package factory;
 import baseClass.Shape;
 import childClass.Circle;
 import childClass.Rectangle;
-import childClass.Square;
+import childClass.Hexagon;
 
-import java.util.Objects;
 
 public class ShapeFactory {
-    public Shape getShape(String shape){
-        if(Objects.equals(shape, "Circle")){
+
+    public Shape getShape(Integer sides){
+        if(sides == 0){
             return new Circle();
-        } else if (Objects.equals(shape, "Rectangle")){
+        } else if(sides == 4){
             return new Rectangle();
-        } else if (Objects.equals(shape, "Square")){
-            return new Square();
+        } else if (sides == 6){
+            return new Hexagon();
         } else{
             return null;
         }
